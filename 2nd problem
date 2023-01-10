@@ -1,0 +1,16 @@
+n=int(input("enter the number of elements: "))
+lst=[]
+for i in range (0,n):
+    b=int(input("enter the element: "))
+    lst.append(b)
+def sumsquare(lst):
+    odd=0
+    even=0
+    for j in lst:
+        if j%2==0:
+            even=even + j**2
+        else:
+            odd=odd+j**2
+    lst=[odd,even]
+    return(lst)
+print(sumsquare(lst))
